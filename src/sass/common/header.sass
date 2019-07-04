@@ -1,0 +1,64 @@
+.header
+    background-color: $color_header
+    min-height: 70px
+    display: flex
+    align-content: center
+    align-items: center
+
+.header__content
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    justify-content: space-between
+    align-content: center
+    align-items: center
+
+.header__site-branding 
+    height: 40px
+
+    img
+        height: 40px
+        width: auto
+
+.header__main-menu
+    display: flex
+    justify-content: space-between
+    margin-right: -20px
+
+    a
+        color: $color_text_light
+        padding: 10px 20px
+
+        &:hover
+            color: $color_theme_red
+
+
+@media all and (min-width: 1200px)
+    .fill-my-void
+
+@media all and (max-width: 1199px)
+    .fill-my-void
+
+@media all and (max-width: 991px)
+    .header__content
+        flex-wrap: wrap 
+        justify-content: center   
+
+    .header__main-menu
+        margin-right: 0
+
+        a
+            line-height: 3
+
+
+@media all and (min-width: 576px) and (max-width: 1199px)
+    .fill-my-void
+
+@media all and (max-width: 575px)
+    .header__main-menu
+        margin-top: 10px
+        margin-bottom: 10px
+        flex-direction: column
+
+        a
+            line-height: 2

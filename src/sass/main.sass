@@ -1,0 +1,139 @@
+$color_text_dark:   #444444
+$color_text_light:  #f9f9f9
+
+$color_theme_primary:   #337ab7
+$color_theme_secondary: #fa8f6f
+
+$color_theme_darken_white: #f9f9f9
+
+$color_header: #333333 
+
+$color_theme_white:     #ffffff  
+$color_theme_yellow:    #efc13a    
+$color_theme_green:     #60cd96
+$color_theme_blue:      #69d2e7
+$color_theme_purple:    #9d88c3
+$color_theme_red:       #b14344
+$color_theme_brown:     #987565
+$color_theme_pink:      #de6290
+$color_theme_orange:    #fd7e14
+
+$color_border: #dee2e6
+
+$anim_time: 0.3s
+$anim_func: ease-in-out
+    
+
+
+body
+    font-family: 'Roboto', sans-serif
+    font-size: 18px
+    font-weight: 300
+p 
+    margin: 0
+
+a 
+    color: $color_text_dark
+    transition: color $anim_time $anim_func
+    text-decoration: none
+
+    &:hover
+        text-decoration: none
+
+.text-nowrap
+    white-space: nowrap
+
+.bold
+    font-weight: 800
+
+ul 
+    margin-top: 0
+    margin-right: 0
+    margin-bottom: 0
+    margin-left: 0
+    padding-top: 0
+    padding-right: 0
+    padding-bottom: 0
+    padding-left: 0
+    list-style-type: none
+
+.title_big
+    font-size: 50px
+    font-weight: 800
+    color: $color_text_dark
+    text-transform: uppercase
+    line-height: 1
+
+.title_medium
+    font-size: 36px 
+    font-weight: 800
+    color: $color_text_dark   
+
+.title_small
+    font-size: 26px
+    font-weight: 800 
+    color: $color_text_dark
+    line-height: 1
+
+.title__desc
+    font-weight: 800
+    margin-bottom: 10px
+
+.btn-single
+    max-width: 220px
+
+.site-content
+    min-height: 80vh
+
+.page__content_with-padding
+    padding-top: 60px
+
+.page__title
+    margin-bottom: 50px
+
+label
+    font-weight: 800
+
+.container 
+  width: 100%
+  padding-right: 15px
+  padding-left: 15px
+  margin-right: auto
+  margin-left: auto
+
+
+@media (min-width: 576px) 
+  .container 
+    max-width: 540px
+  
+@media (min-width: 768px) 
+  .container 
+    max-width: 720px
+  
+@media (min-width: 992px) 
+  .container 
+    max-width: 960px
+  
+@media (min-width: 1200px) 
+  .container 
+    max-width: 1140px
+  
+@media all and (max-width: 991px)
+    .title_big
+        font-size: 26px
+
+    .title_middle
+        font-size: 22px
+
+    .title_small
+        font-size: 22px
+
+    .btn-single
+        max-width: none
+
+@import 'common/header'
+
+@import 'main/vk-api'
+@import 'main/intro'
+
+@import 'common/footer'

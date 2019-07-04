@@ -1,0 +1,49 @@
+.vk-api
+    padding: 100px 0
+
+    .title_big
+        margin-bottom: 50px
+    
+.vk-api__photo-block
+    display: flex
+    flex-wrap: wrap
+    margin-right: -2%
+
+.vk-api__photo-item
+    flex: 0 1 23%
+    margin-right: 2%
+    margin-bottom: 2%
+
+.vk-api__photo-item-image
+    height: 200px
+    width: 100%
+    background-position: center
+    background-size: cover
+
+    img
+        height: 100%
+
+.vk-api__photo-desc
+    background-color: $color_theme_red
+    color: $color_text_light
+    text-align: center
+    font-weight: 800
+    padding: 5px
+
+
+@media all and (min-width: 768px) and (max-width: 991px)
+    .vk-api__photo-item
+        flex: 0 1 31.33%
+
+@media all and (min-width: 576px) and (max-width: 767px)
+    .vk-api__photo-item
+        flex: 0 1 48%
+
+@media all and (max-width: 575px)
+    .vk-api__photo-block
+        margin-right: 0
+
+    .vk-api__photo-item
+        flex: 0 1 100%
+        margin-right: 0
+        margin-bottom: 20px
